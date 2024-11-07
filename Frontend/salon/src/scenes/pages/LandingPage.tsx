@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import Carousel from "react-multi-carousel";
-import CarouselState from "react-multi-carousel";
+// import CarouselState from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import logo from "../../assets/logo.svg"; // Logo might be used later
+// import logo from "../../assets/logo.svg"; // Logo might be used later
 import model from "../../assets/model.jpg";
 import "../../styles/landingPage.css";
 
 function LandingPage() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => setIsMobile(window.innerWidth < 768);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
   useEffect(() => {
     // This ensures that the widget script has loaded before using it.
     const script = document.createElement("script");
