@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2022", // Or your preferred JavaScript version
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx", // Use the new JSX Transform (React 17+)
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["src/**/*"]
 }

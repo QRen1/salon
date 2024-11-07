@@ -10,6 +10,8 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "outDir": "./dist/node", // Output for Node.js code
+    "rootDir": "./src",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -21,5 +23,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "src/**/*.ts", // Include TypeScript files inside src
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules
+    "vite.config.ts" // Explicitly exclude the Vite config file
+  ]
 }

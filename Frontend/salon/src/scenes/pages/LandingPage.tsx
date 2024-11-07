@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import Carousel from "react-multi-carousel";
 // import CarouselState from "react-multi-carousel";
